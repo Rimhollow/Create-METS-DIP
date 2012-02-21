@@ -1,1 +1,9 @@
-Test update
+"Create METS DIP.xml" goes in /etc/archivematica/MCPServer/mcpModulesConfig/
+
+"createMETSDIP.rb" goes in /usr/lib/archivematica/MCPClient/clientScripts/
+
+/etc/archivematica/MCPClient/archivematicaClientModules should contain:
+createMETSDIP_v0.0 = %clientScriptsDirectory%createMETSDIP.rb
+
+/var/archivematica/sharedDirectory/watchedDirectories/createMETSDIP/ should 
+exist
