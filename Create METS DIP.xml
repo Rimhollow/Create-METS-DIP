@@ -9,7 +9,7 @@
     <directories>
         <watchDirectory>%watchDirectoryPath%createMETSDIP/</watchDirectory>
         <processingDirectory>%processingDirectory%</processingDirectory>
-        <successDirectory>%watchDirectoryPath%failed/</successDirectory>
+        <successDirectory>%watchDirectoryPath%storeAIP/</successDirectory>
         <failureDirectory>%watchDirectoryPath%failed/</failureDirectory>
     </directories>
 
@@ -27,7 +27,7 @@
                 <descriptionWhileExecuting></descriptionWhileExecuting>
                 <failureNotification> </failureNotification>
                 <execute>createMETSDIP_v0.0</execute>
-                <arguments>"%relativeLocation%"</arguments>
+                <arguments>"%relativeLocation%" "%clientScriptsDirectory%" "%sharedPath%watchedDirectories/solrize/"</arguments>
                 <executeOnEachFile>No</executeOnEachFile>
             </command>
         </exeCommand>

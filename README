@@ -7,3 +7,5 @@ createMETSDIP_v0.0 = %clientScriptsDirectory%createMETSDIP.sh
 
 /var/archivematica/sharedDirectory/watchedDirectories/createMETSDIP/ should 
 exist
+
+Prepare AIP (or a microservice with similar output) should use createMETSDIP as its success directory.
